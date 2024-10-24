@@ -1,7 +1,7 @@
 import './accounts.css';
 
 import { Menu, MenuDivider, MenuItem } from '@szhsin/react-menu';
-import { useReducer, useState } from 'preact/hooks';
+import { useReducer, useState } from 'react';
 
 import Avatar from '../components/avatar';
 import Icon from '../components/icon';

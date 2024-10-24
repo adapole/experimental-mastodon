@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'preact/hooks';
+import { useEffect, useRef } from 'react';
 
 function useInterval(fn, delay, deps, immediate) {
   const savedCallback = useRef(fn);

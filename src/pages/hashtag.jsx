@@ -4,7 +4,7 @@ import {
   MenuGroup,
   MenuItem,
 } from '@szhsin/react-menu';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import Icon from '../components/icon';

@@ -1,6 +1,6 @@
 import { Menu } from '@szhsin/react-menu';
 import { useWindowSize } from '@uidotdev/usehooks';
-import { useRef } from 'preact/hooks';
+import { useRef } from 'react';
 
 import safeBoundingBoxPadding from '../utils/safe-bounding-box-padding';
 

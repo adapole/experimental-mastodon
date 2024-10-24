@@ -1,4 +1,4 @@
-import { forwardRef } from 'preact/compat';
+import { forwardRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import states from '../utils/states';

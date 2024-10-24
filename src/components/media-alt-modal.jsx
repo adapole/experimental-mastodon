@@ -1,5 +1,5 @@
 import { Menu, MenuItem } from '@szhsin/react-menu';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { useSnapshot } from 'valtio';
 
 import getTranslateTargetLanguage from '../utils/get-translate-target-language';

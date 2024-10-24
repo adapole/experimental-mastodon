@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'preact/hooks';
+import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import Link from '../components/link';

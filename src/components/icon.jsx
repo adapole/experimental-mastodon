@@ -1,5 +1,5 @@
-import { memo } from 'preact/compat';
-import { useEffect, useState } from 'preact/hooks';
+import { memo } from 'react';
+import { useEffect, useState } from 'react';
 
 const SIZES = {
   s: 12,

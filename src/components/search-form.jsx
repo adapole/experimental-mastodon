@@ -1,5 +1,5 @@
-import { forwardRef } from 'preact/compat';
-import { useImperativeHandle, useRef, useState } from 'preact/hooks';
+import { forwardRef } from 'react';
+import { useImperativeHandle, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import { api } from '../utils/api';

@@ -1,6 +1,6 @@
 import './keyboard-shortcuts-help.css';
 
-import { memo } from 'preact/compat';
+import { memo } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useSnapshot } from 'valtio';
 

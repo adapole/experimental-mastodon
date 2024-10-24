@@ -1,5 +1,5 @@
-import { memo } from 'preact/compat';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { memo } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { api } from '../utils/api';
 import states, { saveStatus } from '../utils/states';

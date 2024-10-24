@@ -2,8 +2,8 @@ import './compose.css';
 
 import '@github/text-expander-element';
 import equal from 'fast-deep-equal';
-import { forwardRef } from 'preact/compat';
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { forwardRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import stringLength from 'string-length';
 import { uid } from 'uid/single';

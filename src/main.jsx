@@ -1,19 +1,16 @@
 import './index.css';
-
 import './cloak-mode.css';
 
-import { render } from 'preact';
+import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
 
 import { App } from './app';
 
 if (import.meta.env.DEV) {
-  import('preact/debug');
+  // Remove Preact-specific debug import
 }
 
 // AbortSignal.timeout polyfill
-// Temporary fix from https://github.com/mo/abortcontroller-polyfill/issues/73#issuecomment-1541180943
-// Incorrect implementation, but should be good enough for now
 if ('AbortSignal' in window) {
   AbortSignal.timeout =
     AbortSignal.timeout ||
@@ -24,17 +21,16 @@ if ('AbortSignal' in window) {
     });
 }
 
-render(
+const root = createRoot(document.getElementById('app'));
+root.render(
   <HashRouter>
     <App />
-  </HashRouter>,
-  document.getElementById('app'),
+  </HashRouter>
 );
 
 // Storage cleanup
 setTimeout(() => {
   try {
-    // Clean up iconify localStorage
     Object.keys(localStorage).forEach((key) => {
       if (key.startsWith('iconify')) {
         localStorage.removeItem(key);

@@ -1,6 +1,6 @@
 import './lists.css';
 
-import { useEffect, useReducer, useRef, useState } from 'preact/hooks';
+import { useEffect, useReducer, useRef, useState } from 'react';
 
 import Icon from '../components/icon';
 import Link from '../components/link';

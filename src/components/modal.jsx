@@ -1,7 +1,7 @@
 import './modal.css';
 
-import { createPortal } from 'preact/compat';
-import { useEffect, useRef } from 'preact/hooks';
+import { createPortal } from 'react';
+import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 
 const $modalContainer = document.getElementById('modal-container');

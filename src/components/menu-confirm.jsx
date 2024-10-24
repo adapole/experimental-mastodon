@@ -1,6 +1,5 @@
 import { Menu, MenuItem, SubMenu } from '@szhsin/react-menu';
-import { cloneElement } from 'preact';
-import { useRef } from 'preact/hooks';
+import { useRef, cloneElement } from 'react';
 
 function MenuConfirm({
   subMenu = false,

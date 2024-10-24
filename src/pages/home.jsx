@@ -1,8 +1,8 @@
 import './notifications-menu.css';
 
 import { ControlledMenu } from '@szhsin/react-menu';
-import { memo } from 'preact/compat';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { memo } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSnapshot } from 'valtio';
 
 import Columns from '../components/columns';

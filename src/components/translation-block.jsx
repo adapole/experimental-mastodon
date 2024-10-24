@@ -2,7 +2,7 @@ import './translation-block.css';
 
 import pRetry from 'p-retry';
 import pThrottle from 'p-throttle';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 
 import sourceLanguages from '../data/lingva-source-languages';
 import getTranslateTargetLanguage from '../utils/get-translate-target-language';

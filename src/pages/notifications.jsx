@@ -1,8 +1,8 @@
 import './notifications.css';
 
 import { useIdle } from '@uidotdev/usehooks';
-import { memo } from 'preact/compat';
-import { useCallback, useEffect, useRef, useState } from 'preact/hooks';
+import { memo } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useSnapshot } from 'valtio';
 

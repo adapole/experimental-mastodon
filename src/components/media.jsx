@@ -1,12 +1,12 @@
 import { getBlurHashAverageColor } from 'fast-blurhash';
-import { Fragment } from 'preact';
 import {
   useCallback,
   useLayoutEffect,
   useMemo,
   useRef,
   useState,
-} from 'preact/hooks';
+  Fragment
+} from 'react';
 import QuickPinchZoom, { make3dTransformValue } from 'react-quick-pinch-zoom';
 
 import mem from '../utils/mem';

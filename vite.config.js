@@ -1,4 +1,4 @@
-import preact from '@preact/preset-vite';
+import react from '@vitejs/plugin-react';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import { resolve } from 'path';
@@ -45,7 +45,7 @@ export default defineConfig({
     host: true,
   },
   plugins: [
-    preact(),
+    react(),
     splitVendorChunkPlugin(),
     removeConsole({
       includes: ['log', 'debug', 'info', 'warn', 'error'],

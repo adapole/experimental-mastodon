@@ -1,5 +1,5 @@
-import { memo } from 'preact/compat';
-import { useLayoutEffect, useState } from 'preact/hooks';
+import { memo } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
 
 import { api } from '../utils/api';

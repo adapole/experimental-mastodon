@@ -1,5 +1,6 @@
-const { VITE_CLIENT_NAME: CLIENT_NAME, VITE_WEBSITE: WEBSITE } = import.meta
-  .env;
+const CLIENT_NAME = import.meta.env.VITE_CLIENT_NAME || 'Phanpy';
+const WEBSITE = import.meta.env.VITE_WEBSITE || 'https://phanpy.social';
+
 
 const SCOPES = 'read write follow push';
 

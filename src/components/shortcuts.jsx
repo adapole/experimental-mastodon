@@ -1,7 +1,7 @@
 import './shortcuts.css';
 
 import { Menu, MenuItem } from '@szhsin/react-menu';
-import { useMemo, useRef } from 'preact/hooks';
+import { useMemo, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { useNavigate } from 'react-router-dom';
 import { useSnapshot } from 'valtio';

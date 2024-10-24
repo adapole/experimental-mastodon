@@ -1,4 +1,4 @@
-import { useEffect } from 'preact/hooks';
+import { useEffect } from 'react';
 
 import { api } from '../utils/api';
 import states from '../utils/states';

@@ -10,14 +10,14 @@ import {
 } from '@szhsin/react-menu';
 import { decodeBlurHash } from 'fast-blurhash';
 import pThrottle from 'p-throttle';
-import { memo } from 'preact/compat';
+import { memo } from 'react';
 import {
   useCallback,
   useEffect,
   useMemo,
   useRef,
   useState,
-} from 'preact/hooks';
+} from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { InView } from 'react-intersection-observer';
 import { useLongPress } from 'use-long-press';

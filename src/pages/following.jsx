@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'preact/hooks';
+import { useEffect, useRef } from 'react';
 import { useSnapshot } from 'valtio';
 
 import Timeline from '../components/timeline';

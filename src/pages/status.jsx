@@ -3,7 +3,7 @@ import './status.css';
 import { Menu, MenuDivider, MenuHeader, MenuItem } from '@szhsin/react-menu';
 import debounce from 'just-debounce-it';
 import pRetry from 'p-retry';
-import { memo } from 'preact/compat';
+import { memo } from 'react';
 import {
   useCallback,
   useEffect,
@@ -11,7 +11,7 @@ import {
   useMemo,
   useRef,
   useState,
-} from 'preact/hooks';
+} from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { InView } from 'react-intersection-observer';
 import { matchPath, useSearchParams } from 'react-router-dom';

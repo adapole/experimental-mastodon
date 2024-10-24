@@ -1,7 +1,7 @@
 import './lists.css';
 
 import { Menu, MenuItem } from '@szhsin/react-menu';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useSnapshot } from 'valtio';

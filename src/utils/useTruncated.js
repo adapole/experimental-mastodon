@@ -1,4 +1,4 @@
-import { useRef } from 'preact/hooks';
+import { useRef } from 'react';
 import { useThrottledCallback } from 'use-debounce';
 import useResizeObserver from 'use-resize-observer';
 

@@ -1,9 +1,8 @@
 import './index.css';
-
 import './app.css';
 
-import { render } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { createRoot } from 'react-dom/client';
+import { useEffect, useState } from 'react';
 
 import Compose from './components/compose';
 import useTitle from './utils/useTitle';
@@ -30,7 +29,6 @@ function App() {
   useEffect(() => {
     if (uiState === 'closed') {
       try {
-        // Focus parent window
         window.opener.focus();
       } catch (e) {}
       window.close();
@@ -39,7 +37,7 @@ function App() {
 
   if (uiState === 'closed') {
     return (
-      <div class="box">
+      <div className="box">
         <p>You may close this page now.</p>
         <p>
           <button
@@ -77,4 +75,5 @@ function App() {
   );
 }
 
-render(<App />, document.getElementById('app-standalone'));
+const root = createRoot(document.getElementById('app-standalone'));
+root.render(<App />);

@@ -1,6 +1,6 @@
 import './login.css';
 
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import Link from '../components/link';

@@ -1,6 +1,6 @@
 import './name-text.css';
 
-import { memo } from 'preact/compat';
+import { memo } from 'react';
 
 import states from '../utils/states';
 

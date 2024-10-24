@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 function AsyncText({ children }) {
   if (typeof children === 'string') return children;

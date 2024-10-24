@@ -8,7 +8,7 @@ import dayjs from 'dayjs';
 import dayjsTwitter from 'dayjs-twitter';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 dayjs.extend(dayjsTwitter);
 dayjs.extend(localizedFormat);

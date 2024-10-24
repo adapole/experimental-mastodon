@@ -1,6 +1,6 @@
 import './avatar.css';
 
-import { useRef } from 'preact/hooks';
+import { useRef } from 'react';
 
 const SIZES = {
   s: 16,

@@ -6,7 +6,7 @@ import {
   useMemo,
   useRef,
   useState,
-} from 'preact/hooks';
+} from 'react';
 import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import 'swiped-events';
 import { useSnapshot } from 'valtio';

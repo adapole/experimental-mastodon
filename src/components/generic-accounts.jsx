@@ -1,6 +1,6 @@
 import './generic-accounts.css';
 
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import { useSnapshot } from 'valtio';
 

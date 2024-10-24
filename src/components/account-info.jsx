@@ -8,7 +8,7 @@ import {
   useReducer,
   useRef,
   useState,
-} from 'preact/hooks';
+} from 'react';
 
 import { api } from '../utils/api';
 import enhanceContent from '../utils/enhance-content';
