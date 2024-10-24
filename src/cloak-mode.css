@@ -1,0 +1,42 @@
+body.cloak,
+.cloak {
+  a {
+    text-decoration-color: var(--link-color);
+  }
+
+  .name-text,
+  .name-text *,
+  .status .content-container,
+  .status .content-container *,
+  .status .content-compact,
+  .account-container :is(header, main > *:not(.actions)),
+  .account-container :is(header, main > *:not(.actions)) *,
+  .header-account,
+  .account-block {
+    text-decoration-thickness: 1.1em;
+    text-decoration-line: line-through;
+    text-rendering: optimizeSpeed;
+    filter: opacity(0.5);
+  }
+  .name-text *,
+  .status .content-container *,
+  .account-container :is(header, main > *:not(.actions)) * {
+    filter: none;
+  }
+
+  .status :is(img, video, audio),
+  .avatar,
+  .emoji,
+  .header-banner {
+    filter: contrast(0) !important;
+    background-color: #000 !important;
+  }
+}
+
+/* SPECIAL CASES */
+
+@supports (display: -webkit-box) {
+  body.cloak .card :is(.title, .meta) {
+    background-color: var(--text-color) !important;
+  }
+}

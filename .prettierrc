@@ -1,0 +1,19 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "importOrder": [
+    "^[^.].*.css$",
+    "index.css$",
+    ".css$",
+    "<THIRD_PARTY_MODULES>",
+    "/assets/",
+    "^../",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true,
+  "importOrderCaseInsensitive": true
+}

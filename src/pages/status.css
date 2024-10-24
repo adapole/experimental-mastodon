@@ -1,0 +1,63 @@
+.status-deck header {
+  white-space: nowrap;
+}
+.status-deck header h1 {
+  min-width: 0;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.status-deck header h1 .deck-back {
+  margin-left: -16px;
+}
+
+.status-deck header.inview h1 {
+  font-weight: bold;
+}
+
+.hero-heading {
+  font-size: var(--text-size);
+  display: inline-block;
+}
+.hero-heading .icon {
+  vertical-align: middle;
+  color: var(--text-insignificant-color);
+}
+.hero-heading .insignificant {
+  font-weight: normal;
+}
+
+.ancestors-indicator {
+  font-size: 70% !important;
+
+  & > .avatar:not(:first-child) {
+    margin-left: -4px;
+  }
+}
+.ancestors-indicator:not([hidden]) {
+  animation: slide-up 0.3s both ease-out 0.3s;
+}
+.ancestors-indicator[hidden] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.post-status-banner {
+  position: sticky;
+  bottom: 16px;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  font-size: 90%;
+  background-color: var(--bg-faded-color);
+  padding: 16px;
+  margin: 0 16px;
+  border-radius: 16px;
+  white-space: pre-wrap;
+  line-height: 1.2;
+  max-width: var(--main-width);
+  z-index: 1;
+}
+.post-status-banner > p:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
