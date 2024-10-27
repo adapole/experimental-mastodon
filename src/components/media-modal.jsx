@@ -124,7 +124,7 @@ function MediaModal({
                   ',',
                 )}, .5)`,
               }}
-              tabindex="0"
+              tabIndex="0"
               key={media.id}
               ref={i === currentIndex ? carouselFocusItem : null}
               onClick={(e) => {

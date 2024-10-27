@@ -197,7 +197,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
-    display: box;
+    display: flex;
     -webkit-box-orient: vertical;
     box-orient: vertical;
     -webkit-line-clamp: 2;

@@ -272,7 +272,7 @@
 .status.compact-thread .content-compact {
   overflow: hidden;
   display: -webkit-box;
-  display: box;
+  display: flex;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1089,7 +1089,7 @@ body:has(#modal-container .carousel) .status .media img:hover {
   overflow: hidden;
   white-space: normal;
   display: -webkit-box;
-  display: box;
+  display: flex;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1197,7 +1197,7 @@ a:focus-visible .card img {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  display: box;
+  display: flex;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -1210,7 +1210,7 @@ a:focus-visible .card img {
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  display: box;
+  display: flex;
   -webkit-box-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 2;

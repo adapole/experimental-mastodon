@@ -321,7 +321,7 @@ function Notifications({ columnMode }) {
                   ref={announcementsListRef}
                 >
                   {announcements.map((announcement) => (
-                    <li>
+                    <li key={announcement.id}>
                       <AnnouncementBlock announcement={announcement} />
                     </li>
                   ))}
