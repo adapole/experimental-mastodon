@@ -516,7 +516,7 @@ function AnnouncementBlock({ announcement }) {
         }}
       />
       <p class="insignificant">
-        <time datetime={publishedAtDate.toISOString()}>
+        <time dateTime={publishedAtDate.toISOString()}>
           {niceDateTime(publishedAtDate)}
         </time>
         {updatedAt && updatedAtText !== publishedDateText && (
@@ -525,7 +525,7 @@ function AnnouncementBlock({ announcement }) {
             &bull;{' '}
             <span class="ib">
               Updated{' '}
-              <time datetime={updatedAtDate.toISOString()}>
+              <time dateTime={updatedAtDate.toISOString()}>
                 {niceDateTime(updatedAtDate)}
               </time>
             </span>

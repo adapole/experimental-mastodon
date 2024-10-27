@@ -51,7 +51,7 @@ export default function RelativeTime({ datetime, format }) {
   }, [date]);
 
   return (
-    <time datetime={date.toISOString()} title={date.format('LLLL')}>
+    <time dateTime={date.toISOString()} title={date.format('LLLL')}>
       {dateStr}
     </time>
   );

@@ -49,7 +49,7 @@ function Accounts({ onClose }) {
                     <Avatar
                       url={account.info.avatarStatic}
                       size="xxl"
-                      onDblClick={async () => {
+                      onDoubleClick={async () => {
                         if (isCurrent) {
                           try {
                             const info = await masto.v1.accounts

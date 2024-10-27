@@ -5,7 +5,8 @@ import {
   useMemo,
   useRef,
   useState,
-  Fragment
+  Fragment,
+  forwardRef
 } from 'react';
 import QuickPinchZoom, { make3dTransformValue } from 'react-quick-pinch-zoom';
 
@@ -185,10 +186,10 @@ function Media({
     !!showCaption && !showOriginal && !!description && !longDesc;
   const Figure = !showInlineDesc
     ? Fragment
-    : (props) => {
+    : forwardRef((props,ref) => {
         const { children, ...restProps } = props;
         return (
-          <figure {...restProps}>
+          <figure ref={ref} {...restProps}>
             {children}
             <figcaption
               class="media-caption"
@@ -207,7 +208,7 @@ function Media({
             </figcaption>
           </figure>
         );
-      };
+      });
 
   if (isImage) {
     // Note: type: unknown might not have width/height

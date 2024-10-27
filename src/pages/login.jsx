@@ -121,9 +121,9 @@ function Login() {
             ref={instanceURLRef}
             disabled={uiState === 'loading'}
             // list="instances-list"
-            autocorrect="off"
-            autocapitalize="off"
-            autocomplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            autoComplete="off"
             spellcheck={false}
             placeholder="instance domain"
             onInput={(e) => {

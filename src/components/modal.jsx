@@ -1,6 +1,6 @@
 import './modal.css';
 
-import { createPortal } from 'react';
+import { createPortal } from 'react-dom';
 import { useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 

@@ -975,7 +975,7 @@ function Status({
         dRef.current = nodeRef;
         bRef.current = nodeRef;
       }}
-      tabindex="-1"
+      tabIndex="-1"
       class={`status ${
         !withinContext && inReplyToId && inReplyToAccount
           ? 'status-reply-to'
@@ -1047,7 +1047,7 @@ function Status({
       {size !== 's' && (
         <a
           href={accountURL}
-          tabindex="-1"
+          tabIndex="-1"
           // target="_blank"
           title={`@${acct}`}
           onClick={(e) => {
@@ -1416,7 +1416,7 @@ function Status({
                   <a href={url} target="_blank" rel="noopener noreferrer">
                     <time
                       class="created"
-                      datetime={createdAtDate.toISOString()}
+                      dateTime={createdAtDate.toISOString()}
                     >
                       {createdDateText}
                     </time>
@@ -1427,7 +1427,7 @@ function Status({
                       &bull; <Icon icon="pencil" alt="Edited" />{' '}
                       <time
                         class="edited"
-                        datetime={editedAtDate.toISOString()}
+                        dateTime={editedAtDate.toISOString()}
                         onClick={() => {
                           setShowEdited(id);
                         }}

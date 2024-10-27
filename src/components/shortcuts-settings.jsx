@@ -627,8 +627,8 @@ function ShortcutForm({
                           ? 'followed-hashtags-datalist'
                           : null
                       }
-                      autocorrect="off"
-                      autocapitalize="off"
+                      autoCorrect="off"
+                      autoCapitalize="off"
                       spellcheck={false}
                       pattern={pattern}
                     />

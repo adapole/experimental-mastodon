@@ -243,8 +243,8 @@ function Hashtags({ columnMode, ...props }) {
                     reachLimit ? `Max ${TOTAL_TAGS_LIMIT} tags` : 'Add hashtag'
                   }
                   required
-                  autocorrect="off"
-                  autocapitalize="off"
+                  autoCorrect="off"
+                  autoCapitalize="off"
                   spellcheck={false}
                   // no spaces, no hashtags
                   pattern="[^#][^\s#]+[^#]"

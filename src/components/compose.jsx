@@ -29,7 +29,7 @@ import useInterval from '../utils/useInterval';
 import visibilityIconsMap from '../utils/visibility-icons-map';
 
 import AccountBlock from './account-block';
-// import Avatar from './avatar';
+import React from 'react';
 import Icon from './icon';
 import Loader from './loader';
 import Modal from './modal';
@@ -1530,7 +1530,7 @@ function MediaAttachment({
           spellCheck="true"
           dir="auto"
           disabled={disabled}
-          maxlength="1500" // Not unicode-aware :(
+          maxLength="1500" // Not unicode-aware :(
           // TODO: Un-hard-code this maxlength, ref: https://github.com/mastodon/mastodon/blob/b59fb28e90bc21d6fd1a6bafd13cfbd81ab5be54/app/models/media_attachment.rb#L39
           onInput={(e) => {
             const { value } = e.target;
@@ -1867,7 +1867,7 @@ function CustomEmojisModal({
             Object.entries(customEmojis).map(
               ([category, emojis]) =>
                 !!emojis?.length && (
-                  <>
+                  <React.Fragment key={`section-${category}`}>
                     <div class="section-header">
                       {{
                         '--recent--': 'Recently used',
@@ -1875,9 +1875,9 @@ function CustomEmojisModal({
                       }[category] || category}
                     </div>
                     <section>
-                      {emojis.map((emoji) => (
+                      {emojis.map((emoji, index) => (
                         <button
-                          key={emoji}
+                          key={emoji.id || index}
                           type="button"
                           class="plain4"
                           onClick={() => {
@@ -1924,7 +1924,7 @@ function CustomEmojisModal({
                           <picture>
                             {!!emoji.staticUrl && (
                               <source
-                                srcset={emoji.staticUrl}
+                                srcSet={emoji.staticUrl}
                                 media="(prefers-reduced-motion: reduce)"
                               />
                             )}
@@ -1941,7 +1941,7 @@ function CustomEmojisModal({
                         </button>
                       ))}
                     </section>
-                  </>
+                  </React.Fragment>
                 ),
             )}
         </div>

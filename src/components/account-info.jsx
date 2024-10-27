@@ -617,7 +617,7 @@ function AccountInfo({
                   {!!createdAt && (
                     <div class="insignificant">
                       Joined{' '}
-                      <time datetime={createdAt}>
+                      <time dateTime={createdAt}>
                         {niceDateTime(createdAt, {
                           hideTime: true,
                         })}

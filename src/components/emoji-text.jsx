@@ -12,7 +12,7 @@ function EmojiText({ text, emojis }) {
       const { url, staticUrl } = emoji;
       return (
         <picture>
-          <source srcset={staticUrl} media="(prefers-reduced-motion: reduce)" />
+          <source srcSet={staticUrl} media="(prefers-reduced-motion: reduce)" />
           <img
             key={word}
             src={url}

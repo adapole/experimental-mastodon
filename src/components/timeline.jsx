@@ -291,7 +291,7 @@ function Timeline({
               });
             }
           }}
-          onDblClick={(e) => {
+          onDoubleClick={(e) => {
             if (!e.target.closest('a, button')) {
               loadItems(true);
             }

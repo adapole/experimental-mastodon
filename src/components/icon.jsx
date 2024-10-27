@@ -121,9 +121,12 @@ function Icon({
   }
 
   const [iconData, setIconData] = useState(null);
-  useEffect(async () => {
-    const icon = await iconBlock();
-    setIconData(icon.default);
+  useEffect(() => {
+    async function fetchData() {
+      const icon = await iconBlock();
+      setIconData(icon.default);
+    }
+    fetchData();
   }, [iconBlock]);
 
   return (

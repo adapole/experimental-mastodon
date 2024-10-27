@@ -70,10 +70,10 @@ const SearchForm = forwardRef((props, ref) => {
         // autofocus
         placeholder="Search"
         dir="auto"
-        autocomplete="off"
-        autocorrect="off"
-        autocapitalize="off"
-        onSearch={(e) => {
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        onChange={(e) => {
           if (!e.target.value) {
             setSearchParams({});
           }
